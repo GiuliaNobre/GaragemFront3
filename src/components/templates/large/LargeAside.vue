@@ -28,10 +28,11 @@ import LogoTitle from '@/components/templates/LogoTitle.vue';
       <router-link to="/login">
         <i class="icon mdi mdi-account" /> Login
       </router-link>
+      
     </div>
   </div>
 
-  <logo-title />
+  
 </template>
 <style scoped>
 .mb-2 {

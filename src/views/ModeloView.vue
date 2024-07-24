@@ -1,15 +1,24 @@
 <script setup>
-import { ref, reactive, onMounted } from "vue";
-import ModelosApi from "@/api/modelos";
-const modelosApi = new ModelosApi();
+import { ref, reactive, onMounted } from 'vue'
+import CategoriasApi from '@/api/categorias'
+import MarcasApi from '@/api/marcas'
+import ModelosApi from '@/api/modelos'
 
-const defaultModelo = { id: null, nome: "", marca: "", categoria: "" };
-const modelos = ref([]);
-const modelo = reactive({ ...defaultModelo });
+const categoriasApi = new CategoriasApi()
+const marcasApi = new MarcasApi()
+const modelosApi = new ModelosApi()
+
+const defaultModelo = { id: null, nome: '', marca: '', categoria: '' }
+const modelos = ref([])
+const marcas = ref([])
+const categorias = ref([])
+const modelo = reactive({ ...defaultModelo })
 
 onMounted(async () => {
-  modelos.value = await modelosApi.buscarTodosOsModelos();
-});
+  modelos.value = await modelosApi.buscarTodosOsModelos()
+  marcas.value = await marcasApi.buscarTodasAsMarcas()
+  categorias.value = await categoriasApi.buscarTodasAsCategorias()
+})
 
 function limpar() {
   Object.assign(modelo, { ...defaultModelo });
@@ -17,12 +26,12 @@ function limpar() {
 
 async function salvar() {
   if (modelo.id) {
-    await modelosApi.atualizarModelo(modelo);
+    await modelosApi.atualizarModelo(modelo)
   } else {
-    await modelosApi.adicionarModelo(modelo);
+    await modelosApi.adicionarModelo(modelo)
   }
-  modelos.value = await modelosApi.buscarTodosOsModelos();
-  limpar();
+  modelos.value = await modelosApi.buscarTodosOsModelos()
+  limpar()
 }
 
 function editar(modelo_para_editar) {
@@ -37,29 +46,34 @@ async function excluir(id) {
 </script>
 
 <template>
-  <h1>Modelo</h1>
-  
-  <div class="form">
-    <input type="text" v-model="modelo.nome" placeholder="Nome" />
-    
-    <select v-model="modelo.marca"  >
-      <option value=""></option> placeholder="Marca"
-    </select>
-
-    <button @click="salvar">Salvar</button>
-    <button @click="limpar">Limpar</button>
+  <div class="main">
+    <h1>Modelo</h1>
+    <div class="container-select">
+      <div class="form">
+        <input type="text" v-model="modelo.nome" placeholder="Nome" />
+        <select v-model="modelo.marca" name="marcas" id="marcas">
+          <option :value="marca.id" v-for="marca in marcas" :key="marca.id">
+            {{ marca.nome }}
+          </option>
+        </select>
+        <select v-model="modelo.categoria" name="categorias" id="categorias">
+          <option :value="categoria.id" v-for="categoria in categorias" :key="categoria.id">
+            {{ categoria.descricao }}
+          </option>
+        </select>
+        <button @click="salvar">Salvar</button>
+        <button @click="limpar">Limpar</button>
+      </div>
+      <ul>
+        <li v-for="modelo in modelos" :key="modelo.id">
+          <span @click="editar(modelo)">
+            ({{ modelo.id }}) - {{ modelo.nome }} - {{ modelo.marca }} - {{ modelo.categoria }}
+          </span>
+          <button class @click="excluir(modelo.id)">X</button>
+        </li>
+      </ul>
+    </div>
   </div>
-  
-  <ul>
-    <li v-for="modelo in modelos" :key="modelo.id">
-      <span @click="editar(modelo)">
-        ({{ modelo.id }}) - {{ modelo.nome }} - {{ modelo.marca }} - {{ modelo.categoria }}
-      </span>
-      <button @click="excluir(modelo.id)">X</button>
-    </li>
-  </ul>
 </template>
 
-<style scoped>
-
-</style>
+<style></style>

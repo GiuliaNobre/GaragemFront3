@@ -1,10 +1,7 @@
-<script setup>
-import NavComponent from './components/NavComponent.vue'
-</script>
+<script setup></script>
 
 <template>
- <NavComponent />
+  <RouterView />
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

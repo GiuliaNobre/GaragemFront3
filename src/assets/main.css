@@ -12,8 +12,6 @@
 
 body {
   margin: 0;
-  min-height: 100vh;
-  line-height: 1.6;
   font-family: 'Quicksand', sans-serif;
   font-size: 15px;
   font-optical-sizing: auto;
@@ -24,10 +22,8 @@ body {
 }
 
 #app {
-  max-width: 1280px;
+ 
   margin: 0 auto;
-  padding: 2rem;
-
   font-weight: normal;
 }
 
@@ -36,38 +32,34 @@ body {
   color: black;
 }
 
-a,
-.green {
-  text-decoration: none;
-  transition: 0.4s;
-}
-
-.main {
+/* .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.bt-delete {
+/* .bt-delete {
   background-color: transparent;
   color: #000000;
   border: none;
-}
+} */
 
 h1 {
   color: #000000;
   font-weight: 600;
   margin: 5vw 0 2vw 0;
-  margin-left:1vw;
+  margin-left:2vw;
 }
 
 button {
   background-color: #000000;
   color: white;
   border: none;
-  padding: 0.6vw;
-  border-radius: 5px;
+  padding: 0.8vw;
+  border-radius: 50px;
+  height: 4vh;
+  
 }
 
 .container {
@@ -77,7 +69,7 @@ button {
   background-color: white;
   width: 30vw;
   min-height: 30vw;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ 
 }
 
 .container-select {
@@ -87,7 +79,7 @@ button {
   background-color: white;
   min-width: 40vw;
   min-height: 30vw;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
 }
 
 .form {
@@ -99,10 +91,11 @@ button {
 
 input {
   padding: 0.8vw;
-  border-radius: 5px;
+  border-radius: 20px;
   border: solid #797e8c 1px;
   outline: none;
   width: 15vw;
+  height: 4vh;
 }
 
 ul {
@@ -111,12 +104,13 @@ ul {
 
 li {
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ 
   list-style-type: none;
   margin: 1vw;
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
+ 
   padding: 0 2vw;
 }
 
