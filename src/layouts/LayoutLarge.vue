@@ -4,18 +4,14 @@
 
 <template>
   <div id="layout-large">
-    <header>
-      <large-header />
-    </header>
+  
     <aside>
       <large-aside />
     </aside>
     <main>
       <router-view />
     </main>
-    <footer>
-      <large-footer />
-    </footer>
+    
   </div>
 </template>
 
@@ -54,14 +50,5 @@ main {
   min-height: 80%;
   padding: 2rem;
   grid-area: main;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3rem;
-  background-color: #eeeeee;
-  grid-area: footer;
 }
 </style>

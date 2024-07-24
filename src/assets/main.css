@@ -32,18 +32,6 @@ body {
   color: black;
 }
 
-/* .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .bt-delete {
-  background-color: transparent;
-  color: #000000;
-  border: none;
-} */
 
 h1 {
   color: #000000;
@@ -56,7 +44,7 @@ button {
   background-color: #000000;
   color: white;
   border: none;
-  padding: 0.8vw;
+  padding: 0.5vw;
   border-radius: 50px;
   height: 4vh;
   
@@ -100,6 +88,7 @@ input {
 
 ul {
   padding: 0;
+  width: 27vw;
 }
 
 li {
@@ -115,6 +104,15 @@ li {
 }
 
 select {
-  border-radius: 5px;
+  border-radius: 20px;
   width: 5vw;
+  height: 4vh;
+}
+.btn-excluir{
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 0.5vw;
+  border-radius: 200px;
+  height: 4vh;
 }

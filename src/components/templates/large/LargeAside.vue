@@ -7,23 +7,23 @@ import LogoTitle from '@/components/templates/LogoTitle.vue';
     <div class="divider" />
     <div class="menu">
       <router-link to="/acessorios">
-        <i class="icon mdi mdi-home-outline" /> Acessorio
+        <i class="icon mdi mdi-tire" /> Acessorio
       </router-link>
       <router-link to="/categorias">
-        <i class="icon mdi mdi-account-circle-outline" /> Categoria
+        <i class="mdi mdi-car-convertible" /> Categoria
       </router-link>
 
       <router-link to="/cores">
-        <i class="icon mdi mdi-account-circle-outline" /> Cor
+        <i class="icon mdi mdi-palette" /> Cor
       </router-link>
       <router-link to="/marcas">
-        <i class="icon mdi mdi-cart-outline" /> Marca
+        <i class="icon mdi mdi-watermark" /> Marca
       </router-link>
       <router-link to="/modelos">
-        <i class="icon mdi mdi-cart-outline" /> Modelo
+        <i class="icon mdi mdi-van-passenger" /> Modelo
       </router-link>
       <router-link to="/veiculos">
-        <i class="icon mdi mdi-cart-outline" /> Veiculo
+        <i class="icon mdi mdi-car-back" /> Veiculo
       </router-link>
       <router-link to="/login">
         <i class="icon mdi mdi-account" /> Login

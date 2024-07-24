@@ -7,6 +7,6 @@ services:
       - SECRET_KEY=!cetzly9&c=46@qp5^t(ny6rs#ad4_ss%cs0jvcf!3dp#3+#64
       - DEBUG=True #  possible values are: True, False
       - PASSAGE_APP_ID=2vv6kqmDlyrr4XchqNxAdm4K
-      - PASSAGE_API_KEY=MW7M3C0vvd.UaSGxiPnSZbNfDVZyAUXbufHaWesUzrvjebF6OkP1WR1kZdrZal55TSAXB50fVzb
+      - PASSAGE_API_KEY=FfPetUKhLN.t8GP0H1qXe7JCkG0Zhi9yt1kh3VFnf9ZJro9eQp1g9ROpyeLew3J1P5JCJpvlekr
     ports:
       - 19003:19003

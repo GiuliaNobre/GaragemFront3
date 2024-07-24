@@ -22,27 +22,27 @@ onBeforeRouteUpdate(() => {
     </div>
     <div class="icons">
       <RouterLink to="/acessorios">
-        <i class="mdi mdi-home-outline" />
+        <i class="icon mdi mdi-tire" />
        
       </RouterLink>
       <RouterLink to="/categorias">
-        <i class="mdi mdi-account-circle-outline" />
+        <i class="mdi mdi-car-convertible" />
        
       </RouterLink>
       <RouterLink to="cores">
-        <i class="mdi mdi-cart-outline" />
+        <i class="icon mdi mdi-palette" />
         
       </RouterLink>
-       <RouterLink to="/acessorios">
-        <i class="mdi mdi-home-outline" />
+       <RouterLink to="/marcas">
+        <i class="icon mdi mdi-watermark" />
       
       </RouterLink>
-      <RouterLink to="/categorias">
-        <i class="mdi mdi-account-circle-outline" />
+      <RouterLink to="/modelos">
+        <i class="icon mdi mdi-van-passenger" />
        
       </RouterLink>
-      <RouterLink to="cores">
-        <i class="mdi mdi-cart-outline" />
+      <RouterLink to="veiculos">
+        <i class="icon mdi mdi-car-back" />
        
       </RouterLink>
   
