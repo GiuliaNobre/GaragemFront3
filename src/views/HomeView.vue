@@ -27,5 +27,5 @@ onMounted(() => {
 </script>
 
 <template>
-  <product-list />
+ 
 </template>
