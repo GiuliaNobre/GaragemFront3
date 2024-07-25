@@ -1,13 +1,13 @@
 <script setup>
 import { ref, reactive, onMounted } from 'vue'
-import CategoriasApi from '@/api/categorias'
-import MarcasApi from '@/api/marcas'
 import ModelosApi from '@/api/modelos'
+import MarcasApi from '@/api/marcas'
+import CategoriasApi from '@/api/categorias'
+import Button from '../components/ButtonComponent.vue'
 
-const categoriasApi = new CategoriasApi()
-const marcasApi = new MarcasApi()
 const modelosApi = new ModelosApi()
-
+const marcasApi = new MarcasApi()
+const categoriasApi = new CategoriasApi()
 const defaultModelo = { id: null, nome: '', marca: '', categoria: '' }
 const modelos = ref([])
 const marcas = ref([])
@@ -21,7 +21,7 @@ onMounted(async () => {
 })
 
 function limpar() {
-  Object.assign(modelo, { ...defaultModelo });
+  Object.assign(modelo, { ...defaultModelo })
 }
 
 async function salvar() {
@@ -35,13 +35,13 @@ async function salvar() {
 }
 
 function editar(modelo_para_editar) {
-  Object.assign(modelo, modelo_para_editar);
+  Object.assign(modelo, modelo_para_editar)
 }
 
 async function excluir(id) {
-  await modelosApi.excluirModelo(id);
-  modelos.value = await modelosApi.buscarTodosOsModelos();
-  limpar();
+  await modelosApi.excluirModelo(id)
+  modelos.value = await modelosApi.buscarTodosOsModelos()
+  limpar()
 }
 </script>
 
@@ -61,15 +61,14 @@ async function excluir(id) {
             {{ categoria.descricao }}
           </option>
         </select>
-        <button @click="salvar">Salvar</button>
-        <button @click="limpar">Limpar</button>
+        <Button @salvar="salvar" @limpar="limpar" />
       </div>
       <ul>
         <li v-for="modelo in modelos" :key="modelo.id">
           <span @click="editar(modelo)">
             ({{ modelo.id }}) - {{ modelo.nome }} - {{ modelo.marca }} - {{ modelo.categoria }}
           </span>
-          <button class @click="excluir(modelo.id)">X</button>
+          <button class="bt-delete" @click="excluir(modelo.id)">X</button>
         </li>
       </ul>
     </div>
