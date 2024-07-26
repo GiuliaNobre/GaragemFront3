@@ -10,12 +10,41 @@ defineProps(['label', 'list'])
   </select>
 </template>
 <style scoped>
-select {
+
+  select {
   border-radius: 5px;
-  width: 5vw;
+  width: 100%; 
+  padding: 0.8vw; 
+  border: solid #797e8c 1px; 
+  box-sizing: border-box; 
+  font-size: 1rem; 
 }
 
 select:invalid {
-  color: gray;
+  color: gray; 
 }
+
+
+@media (max-width: 1200px) {
+  select {
+    width: calc(100% - 2vw); 
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  select {
+    width: calc(100% - 2vw); 
+    font-size: 0.8rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  select {
+    width: calc(100% - 3vw);
+    font-size: 0.8rem; 
+    padding: 1vw;
+  }
+}
+
 </style>

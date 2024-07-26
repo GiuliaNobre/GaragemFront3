@@ -56,8 +56,8 @@ async function excluir(id) {
     <h1>Veículos</h1>
     <div class="container-select">
       <div class="form">
-        <NumberField v-model="veiculo.ano" label="ano" />
-        <NumberField v-model="veiculo.preco" label="preço" />
+        <NumberField v-model="veiculo.ano" label="ano"  />
+        <NumberField v-model="veiculo.preco" label="preço"  />
         <Select v-model="veiculo.cor" label="cores" :list="cores" />
         <Select v-model="veiculo.modelo" label="modelos" :list="modelos" />
         <Select v-model="veiculo.acessorio" label="acessorios" :list="acessorios" />
