@@ -58,7 +58,7 @@ onBeforeRouteUpdate(() => {
   bottom: 12%;
   right: 1rem;
   border-top: #eeeeee 1px solid;
-  background-color:#3333333f;
+  background-color:#B6B6B6;
   display: block;
   padding: 1rem;
   border-radius: 0.3rem;
@@ -103,7 +103,7 @@ onBeforeRouteUpdate(() => {
 
 .icon-link:hover {
   color: #ffffff;
-  background-color: #3333333f;
+  background-color: #B6B6B6;
   transform: scale(1.1);
 }
 
@@ -119,7 +119,7 @@ onBeforeRouteUpdate(() => {
   font-size: 0.75rem;
   white-space: nowrap;
   z-index: 10;
-  background-color: #3333333f;
+  background-color:#B6B6B6;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
@@ -142,7 +142,7 @@ onBeforeRouteUpdate(() => {
 
 .hamburger:hover {
   color: #ffffff;
-  background-color: #3333333f;
+  background-color: #B6B6B6;
   transform: scale(1.1);
 }
 </style>
