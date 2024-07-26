@@ -11,7 +11,7 @@ onBeforeRouteUpdate(() => {
 
 <template>
   <div id="footerMenu" :style="{ display: showMenu ? 'block' : 'none' }">
-    <RouterLink to="/">
+    <RouterLink to="/home">
       <i class="mdi mdi-home-outline" />
       Home
     </RouterLink>
