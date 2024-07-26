@@ -16,17 +16,19 @@ const model = defineModel();
 <style scoped>
 ul {
   padding: 0;
+  width: 100%; 
+  list-style: none; 
+  margin-top: 1rem;
 }
 li {
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  list-style-type: none;
-  margin: 1vw;
-  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+  margin: 0.5rem 0; 
+  border-radius: 4px; 
   display: flex;
   justify-content: space-between;
-  padding: 0 2vw;
-  box-sizing: border-box; 
+  align-items: center; 
+  padding: 0.6rem 1rem; 
 }
 
 

@@ -12,16 +12,19 @@ defineProps(['label', 'list'])
 <style scoped>
 
   select {
-  border-radius: 5px;
-  width: 100%; 
-  padding: 0.8vw; 
-  border: solid #797e8c 1px; 
-  box-sizing: border-box; 
-  font-size: 1rem; 
+  padding: 0.5rem; 
+  border-radius: 50px; 
+  border: 1px solid #797e8c;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 0.9rem; 
+  width: 100%;
+  max-width: 200px; 
+  height: auto;
 }
 
 select:invalid {
-  color: gray; 
+  color: rgb(255, 255, 255); 
 }
 
 

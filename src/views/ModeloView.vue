@@ -5,6 +5,7 @@ import MarcasApi from '@/api/marcas'
 import CategoriasApi from '@/api/categorias'
 import Button from '../components/ButtonComponent.vue'
 
+
 const modelosApi = new ModelosApi()
 const marcasApi = new MarcasApi()
 const categoriasApi = new CategoriasApi()

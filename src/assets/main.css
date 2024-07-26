@@ -93,6 +93,7 @@ ul {
   padding: 0;
   width: 100%; 
   list-style: none; 
+  margin-top: 1rem;
 }
 
 li {

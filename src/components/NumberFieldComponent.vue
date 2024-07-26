@@ -7,10 +7,14 @@ const emit = defineEmits([])
 </template>
 <style scoped>
 input {
-  padding: 0.8vw;
-  border-radius: 20px;
-  border: solid #797e8c 1px;
+  padding: 0.5rem; 
+  border-radius: 50px; 
+  border: 1px solid #797e8c;
   outline: none;
-  width: 15vw;
+  box-sizing: border-box;
+  font-size: 0.9rem; 
+  width: 100%;
+  max-width: 200px; 
+  height: auto;
 }
 </style>
