@@ -1,6 +1,6 @@
 <script setup>
-import { defineEmits } from 'vue';
-const emit = defineEmits(['salvar, limpar']);
+import { defineEmits } from 'vue'
+const emit = defineEmits(['salvar, limpar'])
 </script>
 
 <template>
@@ -13,15 +13,17 @@ button {
   background-color: #000;
   color: #fff;
   border: none;
-  padding: 0.5rem 1rem; 
-  border-radius: 20px; 
-  font-size: 0.9rem; 
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 button:hover {
-  background-color: #333; 
+  background-color: #333;
 }
 
 .button-container {
@@ -34,18 +36,18 @@ button:hover {
     font-size: 1.5rem;
   }
 
-  button, .btn-excluir {
-    padding: 10px 10px; 
-    font-size: 0.7rem; 
-  }}
-
-  @media (max-width: 480px) {
-
-  button, .btn-excluir {
-    padding: 10px 10px; 
-    font-size: 0.7rem; 
+  button,
+  .btn-excluir {
+    padding: 10px 10px;
+    font-size: 0.7rem;
   }
+}
+
+@media (max-width: 480px) {
+  button,
+  .btn-excluir {
+    padding: 10px 10px;
+    font-size: 0.7rem;
   }
-
-
+}
 </style>
