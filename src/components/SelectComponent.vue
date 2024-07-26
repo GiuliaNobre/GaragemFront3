@@ -46,7 +46,7 @@ select:invalid {
   select {
     width: calc(100% - 3vw);
     font-size: 0.8rem; 
-    padding: 1vw;
+   
   }
 }
 

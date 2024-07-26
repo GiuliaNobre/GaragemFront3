@@ -48,13 +48,14 @@ onBeforeRouteUpdate(() => {
 <style scoped>
 #footerMenu {
   position: fixed;
-  bottom: 15%;
+  bottom: 12%;
   right: 2rem;
-  width: 20%;
   border-top: #eeeeee 1px solid;
   background-color: white;
   display: block;
   padding: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
 }
 
 #footerMenu a {

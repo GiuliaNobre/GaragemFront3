@@ -34,22 +34,21 @@ li {
 
 @media (max-width: 1200px) {
   li {
-    margin: 0.8vw; 
-    padding: 0 1.5vw; 
+    margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
   }
 }
 @media (max-width: 768px) {
   li {
-    margin: 0.6vw; 
-    padding: 0 1vw; 
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem; 
   }
 }
 
 @media (max-width: 480px) {
   li {
-    margin: 0.5vw; 
-    padding: 0 0.8vw; 
-    font-size: 0.9rem; 
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem; 
   }
 }
 
