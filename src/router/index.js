@@ -19,7 +19,7 @@ const router = createRouter({
       component: LayoutFull,
       children: [
         {
-          path: "",
+          path: "/home",
           name: "home",
           component: HomeView,
         },
