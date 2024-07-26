@@ -14,7 +14,7 @@ button {
   color: #fff;
   border: none;
   padding: 0.5rem 1rem; 
-  border-radius: 25px; 
+  border-radius: 20px; 
   font-size: 0.9rem; 
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
@@ -35,14 +35,14 @@ button:hover {
   }
 
   button, .btn-excluir {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.8rem; 
+    padding: 10px 10px; 
+    font-size: 0.7rem; 
   }}
 
   @media (max-width: 480px) {
 
   button, .btn-excluir {
-    padding: 0.3rem 0.6rem; 
+    padding: 10px 10px; 
     font-size: 0.7rem; 
   }
   }

@@ -22,7 +22,8 @@ ul {
 }
 li {
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+  box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 8px; 
+  border-top: 1px solid #eeeeee;
   margin: 0.5rem 0; 
   border-radius: 4px; 
   display: flex;

@@ -6,7 +6,7 @@ import ModelosApi from '@/api/modelos'
 import AcessoriosApi from '@/api/acessorios'
 import Button from '../components/ButtonComponent.vue'
 import NumberField from '../components/NumberFieldComponent.vue'
-import Line from '@/components/LineComponent.vue'
+import Li from '@/components/LiComponent.vue'
 import Select from '../components/SelectComponent.vue'
 
 const veiculosApi = new VeiculosApi()
@@ -63,7 +63,7 @@ async function excluir(id) {
         <Select v-model="veiculo.acessorio" label="acessorios" :list="acessorios" />
         <Button @salvar="salvar()" @limpar="limpar()" />
       </div>
-      <Line :veiculos="veiculos" />
+      <Li :veiculos="veiculos" />
     </div>
   </div>
 </template>
