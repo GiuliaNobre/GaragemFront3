@@ -29,7 +29,7 @@ onMounted(() => {
   <div class="page">
     <header class="header">
       <h1 class="title">McQueen Garagem</h1>
-      <p class="subtitle">Encontre o carro dos seus sonhos</p>
+      <p class="subtitle">Encontre o carro dos seus sonhos aqui</p>
     </header>
 
     <section class="hero">
