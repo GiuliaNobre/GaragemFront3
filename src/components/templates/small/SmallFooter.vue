@@ -49,7 +49,7 @@ onBeforeRouteUpdate(() => {
 #footerMenu {
   position: fixed;
   bottom: 15%;
-  right: 0;
+  right: 2rem;
   width: 20%;
   border-top: #eeeeee 1px solid;
   background-color: white;
@@ -70,8 +70,7 @@ onBeforeRouteUpdate(() => {
 #footerMenu a:hover {
   color: #333333;
   background-color: #f0f0f0; 
-  border-radius: 4px; 
-  padding: 0.5rem; 
+  padding: 0.3rem; 
 }
 
 .icons {
@@ -105,7 +104,7 @@ onBeforeRouteUpdate(() => {
   align-items: center;
   text-decoration: none;
   color: #282828;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: color 0.3s, background-color 0.3s, transform 0.3s; 
   padding: 0.5rem; 
@@ -116,4 +115,5 @@ onBeforeRouteUpdate(() => {
   background-color: #3333333f; 
   transform: scale(1.1); 
 }
+
 </style>
